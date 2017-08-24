@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     // CONFIG 
     func configUI()
     {
-        // TODO
+        // no op for now
     }
 
     
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
 
     // Segue to SettingsVC
     @IBAction func onSettingsClicked(_ sender: UIBarButtonItem) {
-        // TODO -- segue or create a new VC
+        //  segue or create a new VC
         print("settings clicked!")
         
         let settingsVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController")
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
     // Calculate Tip, Total Bill and Split between Number of People
     func calculateTipForSplit(numPeople: Int)
     {
-        // TODO
+        // calculate tip, total and per person
         let bill = Double(billField.text!) ?? 0
         
         let tip  = bill * currentTipRate
